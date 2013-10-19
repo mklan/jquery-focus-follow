@@ -1,10 +1,10 @@
-# jquery.focus-follower
+# jquery.focus-follow
 
 A responsive container that follows your focus, while hovering over your elements (for example your image gallery).
 
 ## Dependencies
 
-In order to use jquery.focus-follower you have to include the jQuery library.
+In order to use jquery.focus-follow you have to include the jQuery library.
 
 ## Installation
 
@@ -29,7 +29,7 @@ $("img").followFocus();
 
 ## Examples
 
-Check out the [examples](https://github.com/vaceta/jquery-focus-follower/tree/master/examples) 
+Check out the [examples](https://github.com/vaceta/jquery-focus-follow/tree/master/examples) 
 
 
 ## Author
