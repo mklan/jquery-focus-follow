@@ -19,7 +19,7 @@ Include the script after jQuery:
 
 #### followFocus method
 
-Select your elements that should take advance of the focus-follow feature and call the `followFocus()` method
+Select your elements that should take advantage of the focus-follow feature and call the `followFocus()` method
 
 ```javascript
 $("img").followFocus();
