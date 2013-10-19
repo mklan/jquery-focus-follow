@@ -40,7 +40,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
              speed: 400,
              opacity: 1,
              timeout: 200,
-             margin: 2
+             margin: 2,
+			 z_index: -1
 
          }, options );
 
@@ -57,7 +58,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
          $(follower).css({
              "border-radius": "6px",
-             "z-index": -1,
+             "z-index": settings.z_index,
              "position": "absolute",
              "background-color": settings.color,
              "opacity": 0
