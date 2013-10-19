@@ -1,0 +1,36 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="libs/holder.js"></script>
+<script type="text/javascript" src="../jquery.focus-follower.js"></script>
+
+<link rel="stylesheet" href="css/example1.css">
+
+<h1> Hover over the images </h1>
+
+<img src="libs/holder.js/300x200">
+<img src="libs/holder.js/300x200">
+<img src="libs/holder.js/300x200">
+</br>
+<img src="libs/holder.js/300x200">
+<img src="libs/holder.js/300x200" style="border-radius: 10px;">
+<img src="libs/holder.js/300x200">
+</br>
+<img src="libs/holder.js/300x200">
+<img src="libs/holder.js/300x100">
+<img src="libs/holder.js/300x200" style="border-radius: 10px;">
+</br>
+
+<script>
+
+$(function() {
+
+        $("img").focusFollow({
+			color : "green",
+			margin: 6,
+			opacity: 0.4
+        
+		});
+        
+
+});
+
+</script>
