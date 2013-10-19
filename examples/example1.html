@@ -6,29 +6,33 @@
 
 <h1> Hover over the images </h1>
 
-<img src="libs/holder.js/300x200">
-<img src="libs/holder.js/300x200">
-<img src="libs/holder.js/300x200">
+
+<div id="wrapper">
+	<img src="libs/holder.js/300x200">
+	<img src="libs/holder.js/300x200">
+	<img src="libs/holder.js/300x200">
+	</br>
+	<img src="libs/holder.js/300x200">
+	<img src="libs/holder.js/300x200" style="border-radius: 10px;">
+	<img src="libs/holder.js/300x200">
+	</br>
+	<img src="libs/holder.js/300x200">
+	<img src="libs/holder.js/300x100">
+	<img src="libs/holder.js/300x200" style="border-radius: 10px;">
 </br>
-<img src="libs/holder.js/300x200">
-<img src="libs/holder.js/300x200" style="border-radius: 10px;">
-<img src="libs/holder.js/300x200">
-</br>
-<img src="libs/holder.js/300x200">
-<img src="libs/holder.js/300x100">
-<img src="libs/holder.js/300x200" style="border-radius: 10px;">
-</br>
+</div>
 
 <script>
 
 $(function() {
 
         $("img").focusFollow({
+			wrapper: '#wrapper',
 			color: 'green',
 			opacity: 0.5,
 			margin: 8,
 			speed: 600,
-			timeout: 2000
+			timeout: 500
 		});
         
 

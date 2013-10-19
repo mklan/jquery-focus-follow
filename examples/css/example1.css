@@ -2,6 +2,10 @@ img{
 	margin: 10px;
 }
 
+#wrapper{
+	position: absolute;
+}
+
 h1{
 	font-family: sans-serif;
 }	

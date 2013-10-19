@@ -92,13 +92,26 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                  }
 
              });
-             $(this).on( "mouseleave", function() {
+			 
+			 if( options.wrapper == null ){
+			     console.log("no wrapper");
+				 $(this).on( "mouseleave", function() {
 
-                 $(follower).stop().animate({
-                     'opacity' : 0
-                 },settings.timeout);
+					 $(follower).stop().animate({
+						 'opacity' : 0
+					 },settings.timeout);
 
-             });
+				 });
+			 }else{
+				$(options.wrapper).on( "mouseleave", function() {
+
+					 $(follower).stop().animate({
+						 'opacity' : 0
+					 },settings.timeout);
+
+				 });
+				
+			 }
          });
 
      }
