@@ -1,6 +1,6 @@
 /*!
  * jquery.focus-follow v0.1;
- * A responsive container that follows your focus, while hovering over your elements (for example your image gallery).
+ * A responsive indicatr that follows your focus, while hovering over your elements (for example your image gallery).
  * 
  * contact: matthias.klan@gmail.com
  
@@ -76,19 +76,34 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                          'top' : $(this).offset().top-settings.margin_vertical,
                          'left' : $(this).offset().left-settings.margin_horizontal,
                          'opacity' : settings.opacity,
-                         'border-radius' : settings.border_radius,
                          'height' : $(this).height()+settings.margin_vertical*2,
-                         'width' : $(this).width()+settings.margin_horizontal*2
-
+                         'width' : $(this).width()+settings.margin_horizontal*2,
+						  borderTopLeftRadius: settings.border_radius, 
+						  borderTopRightRadius: settings.border_radius, 
+						  borderBottomLeftRadius: settings.border_radius, 
+						  borderBottomRightRadius: settings.border_radius,
+						  WebkitBorderTopLeftRadius:  settings.border_radius, 
+						  WebkitBorderTopRightRadius: settings.border_radius, 
+						  WebkitBorderBottomLeftRadius: settings.border_radius, 
+						  WebkitBorderBottomRightRadius: settings.border_radius, 
+						  MozBorderRadius: settings.border_radius
                      }, settings.speed);
                  }else{
                      $(follower).css({
                          'top' : $(this).offset().top-settings.margin_vertical,
                          'left' : $(this).offset().left-settings.margin_horizontal,
                          'opacity' : settings.opacity,
-                         'border-radius' : settings.border_radius,
                          'height' : $(this).height()+settings.margin_vertical*2,
-                         'width' : $(this).width()+settings.margin_horizontal*2
+                         'width' : $(this).width()+settings.margin_horizontal*2,
+						  borderTopLeftRadius: settings.border_radius, 
+						  borderTopRightRadius: settings.border_radius, 
+						  borderBottomLeftRadius: settings.border_radius, 
+						  borderBottomRightRadius: settings.border_radius,
+						  WebkitBorderTopLeftRadius:  settings.border_radius, 
+						  WebkitBorderTopRightRadius: settings.border_radius, 
+						  WebkitBorderBottomLeftRadius: settings.border_radius, 
+						  WebkitBorderBottomRightRadius: settings.border_radius, 
+						  MozBorderRadius: settings.border_radius
                      });
                  }
 
