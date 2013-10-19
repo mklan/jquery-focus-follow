@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-focus-follow by vaceta</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery-focus-follow</h1>
+        <p>A responsive container that follows your focus, while hovering over your elements (for example your image gallery).</p>
+
+        <p class="view"><a href="https://github.com/vaceta/jquery-focus-follow">View the Project on GitHub <small>vaceta/jquery-focus-follow</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/vaceta/jquery-focus-follow/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/vaceta/jquery-focus-follow/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/vaceta/jquery-focus-follow">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="jqueryfocus-follow" class="anchor" href="#jqueryfocus-follow"><span class="octicon octicon-link"></span></a>jquery.focus-follow</h1>
+
+<p>A responsive indicator that follows your focus, while hovering over your elements (for example your image gallery). The elements can have different dimensions and have a different <code>border-radius</code>. Everything gets recalculated on the fly, so you can use it within your responsive websites.</p>
+
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>In order to use jquery.focus-follow you have to include the jQuery library.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Include the script after jQuery:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/jquery.focus-follower.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h4>
+<a name="followfocus-method" class="anchor" href="#followfocus-method"><span class="octicon octicon-link"></span></a>followFocus method</h4>
+
+<p>Select your elements that should take advance of the focus-follow feature and call the <code>followFocus()</code> method</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"img"</span><span class="p">).</span><span class="nx">followFocus</span><span class="p">();</span>
+</pre></div>
+
+<h4>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h4>
+
+<table>
+<thead><tr>
+<th>option</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><i>color</i></td>
+<td>string</td>
+<td>"orange"</td>
+<td>color of the focus indicator. </td>
+</tr>
+<tr>
+<td><i>opacity</i></td>
+<td>float</td>
+<td>1.0</td>
+<td>opacity of the focus indicator (range: 0.0 - 1.0). </td>
+</tr>
+<tr>
+<td><i>speed</i></td>
+<td>int</td>
+<td>400</td>
+<td>duration in milliseconds that takes until the focus indicator moves from the last hovered element to the new one.</td>
+</tr>
+<tr>
+<td><i>margin</i></td>
+<td>int</td>
+<td>2</td>
+<td>margin of the focus indicator </td>
+</tr>
+<tr>
+<td><i>margin_horizontal</i></td>
+<td>int</td>
+<td>2</td>
+<td>horizontal margin of the focus indicator </td>
+</tr>
+<tr>
+<td><i>margin_vertical</i></td>
+<td>int</td>
+<td>2</td>
+<td>vertical margin of the focus indicator </td>
+</tr>
+<tr>
+<td><i>border_radius</i></td>
+<td>int</td>
+<td>auto</td>
+<td>border radius of the focus indicator. (If this option is not in use, the plugin will automaticly detect the border radius of the elements and use these)</td>
+</tr>
+<tr>
+<td><i>wrapper</i></td>
+<td>string</td>
+<td>-</td>
+<td>id or class of an wrapper container that typically surround the elements. If you leave this wrapper the focus indicator will disappear.</td>
+</tr>
+<tr>
+<td><i>timeout</i></td>
+<td>int</td>
+<td>200</td>
+<td>timeout in milliseconds after which the focus indicator will completly be faded out if no other element will be hovered during this timeout or you leave an specified wrapper. </td>
+</tr>
+<td><i>z-index</i></td>
+<td>int</td>
+<td>-1</td>
+<td>If you have other z-index elements, you can push the focus indicator into the right layer.</td>
+</tbody>
+</table><h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>Check out the <a href="https://github.com/vaceta/jquery-focus-follow/tree/master/examples">example</a> </p>
+
+<h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p><a href="https://github.com/vaceta/">Matthias Klan</a></p>
+
+<p>contact: <a href="mailto:matthias.klan@gmail.com">matthias.klan@gmail.com</a> </p>
+
+<h2>
+<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h2>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2013 Matthias Klan</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/vaceta">vaceta</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
