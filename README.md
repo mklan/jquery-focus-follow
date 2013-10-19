@@ -54,7 +54,7 @@ $("img").followFocus();
    <td><i>border_radius</i></td><td>int</td><td>auto</td><td>border radius of the focus indicator. (If this option is not in use, the plugin will automaticly detect the border radius of the elements and use these)</td>
 </tr>
 <tr>
-   <td><i>wrapper</i></td><td>string</td><td>-</td><td>id or class of an wrapper container that typically surround the elements. If you leave this wrapper the focus indicator will disappear.</td>
+   <td><i>wrapper</i></td><td>string</td><td>-</td><td>id or class of an wrapper container that typically surrounds the elements. If you leave this wrapper the focus indicator will disappear.</td>
 </tr>
 <tr>
    <td><i>timeout</i></td><td>int</td><td>200</td><td>timeout in milliseconds after which the focus indicator will completly be faded out if no other element will be hovered during this timeout or you leave an specified wrapper. </td>
