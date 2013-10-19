@@ -68,7 +68,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
              $(this).on( "mouseenter", function() {
 
                  if(options.border_radius == null){
-                     settings.border_radius = $(this).css("border-radius");
+					 if( parseInt($(this).css("border-radius")) != 0){
+					 settings.border_radius = parseInt($(this).css("border-radius"))+settings.margin_vertical;
+					 }else{
+					 settings.border_radius = 0;
+					 }
                  }
 
                  if($(follower).css('opacity') != 0){
