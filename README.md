@@ -12,7 +12,7 @@ Include the script after jQuery:
 
 ```html
 <script src="/path/to/jquery.js"></script>
-<script src="/path/to/jquery.focus-follower.js"></script>
+<script src="/path/to/jquery.focus-follow.js"></script>
 ```
 
 ## Usage
