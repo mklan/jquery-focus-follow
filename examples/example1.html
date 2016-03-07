@@ -1,52 +1,63 @@
-<style>
-img{
-	margin: 10px;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <meta name="author" content="Matthias Klan">
+    <title>jquery focus follow | DEMO</title>
+  </head>
 
-.wrapper{
-	position: absolute;
-}
+  <body>
+	<style>
+	img{
+		margin: 10px;
+	}
 
-h1{
-	font-family: sans-serif;
-}
-</style>
+	.wrapper{
+		position: absolute;
+	}
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
-<script type="text/javascript" src="../jquery.focus-follow.js"></script>
+	h1{
+		font-family: sans-serif;
+	}
+	</style>
 
-<h1> Hover over the images </h1>
+	<h1> Hover over the images </h1>
 
 
-<div class="wrapper">
-	<img src="http://placehold.it/300x200">
-	<img src="http://placehold.it/300x100">
-	<img src="http://placehold.it/300x200">
-	</br>
-	<img src="http://placehold.it/300x200">
-	<img src="http://placehold.it/300x200" style="border-radius: 40px; -moz-border-radius : 40px;">
-	<img src="http://placehold.it/300x200">
-	</br>
-	<img src="http://placehold.it/300x200">
-	<img src="http://placehold.it/300x200">
-	<img src="http://placehold.it/300x200" style="border-radius: 40px; -moz-border-radius : 40px;">
-</div>
+	<div class="wrapper">
+		<img src="http://placehold.it/300x200">
+		<img src="http://placehold.it/300x100">
+		<img src="http://placehold.it/300x200">
+		</br>
+		<img src="http://placehold.it/300x200">
+		<img src="http://placehold.it/300x200" style="border-radius: 40px; -moz-border-radius : 40px;">
+		<img src="http://placehold.it/300x200">
+		</br>
+		<img src="http://placehold.it/300x200">
+		<img src="http://placehold.it/300x200">
+		<img src="http://placehold.it/300x200" style="border-radius: 40px; -moz-border-radius : 40px;">
+	</div>
 
-<script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../jquery.focus-follow.js"></script>
+	<script>
 
-$(function() {
+	$(function() {
 
-        $("img").focusFollow({
-		wrapper: '#wrapper',
-		color: 'green',
-		opacity: 0.5,
-		margin_horizontal: 8,
-		margin_vertical: 8,
-		speed: 600,
-		timeout: 500
+					$("img").focusFollow({
+			wrapper: '#wrapper',
+			color: 'green',
+			opacity: 0.5,
+			margin_horizontal: 8,
+			margin_vertical: 8,
+			speed: 600,
+			timeout: 500
+		});
+
+
 	});
-        
 
-});
-
-</script>
+	</script>
+  </body>
+</html>
