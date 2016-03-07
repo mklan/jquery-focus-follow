@@ -65,9 +65,9 @@ $("img").followFocus();
 </table>
 
 
-## Example
+## Demo
 
-Check out the [example](https://github.com/vaceta/jquery-focus-follow/tree/master/examples) 
+Check out the [demo](http://matthiasklan.github.io/jquery-focus-follow-demo/) 
 
 
 ## Author
